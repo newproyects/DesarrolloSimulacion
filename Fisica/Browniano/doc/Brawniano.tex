@@ -1,0 +1,212 @@
+\documentclass[10pt,a4papper]{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{cancel}
+\usepackage{multicol}
+\usepackage{blindtext}
+\usepackage[hidelinks]{hyperref}
+\usepackage[left=2.00cm, right=3.00cm, top=2.00cm, bottom=2.00cm]{geometry}
+\author{Angel Fdo. García Núñez}
+\date{Septiembre 17, 2020}
+\title{Estadisitica}
+
+\begin{document}
+
+\Huge
+Desarrollo y simulación del movimiento\\
+Browniano\\
+
+Angel Fernando García Núñez
+
+\Large
+\newpage
+Ecuación de Langevin
+
+\[\frac{d\vec p}{dt}=\sum\vec F\]
+
+\[\frac{d}{dt}(m\vec v)=-\zeta\vec v+\vec f(t)\]
+
+\[m\frac{d\vec v}{dt}=-\zeta\vec v+\vec f(t)\]
+
+\[\dot{\vec v}(t)=-\frac{\zeta}{m}\vec v+\frac{1}{m}\vec f(t)\]
+
+\[\zeta=6\pi\eta r\]
+
+\newpage
+Fuerza Estocástica
+
+\[\langle\vec f(t)\rangle=0\]
+
+\[\langle\vec f(t)\vec f(t')\rangle=2\zeta k_BT\delta(t-t')\]\\
+
+Proceso Wiener
+
+\[\langle\Delta\vec W_i\rangle=0\]
+
+\[\langle\Delta\vec W_i\Delta\vec W_j\rangle=2\zeta k_BT\delta_{ij}\Delta t\]
+
+\newpage
+Metodo de Euler
+
+\[\frac{d\vec x}{dt}=v\]
+
+\[\boxed{\therefore\quad x_{i+1}=x_i+v_i\Delta t}\]\\
+
+\[\frac{d\vec v}{dt}=-\frac{\zeta}{m}\vec v+\frac{1}{m}\vec f(t)\]\\
+
+\[\Delta\vec v=-\frac{\zeta}{m}\int_0^tdt'\vec v_i+\frac{1}{m}\int_0^tdt'\vec f(t)\]\\
+
+\[\Delta\vec v\not=-\frac{\zeta}{m}\vec v_i\Delta t+\frac{1}{m}\vec f(t)\Delta t\]
+
+\[\because\quad\int_0^tdt'\vec f(t)\not=\vec f(t)\Delta t\]\\
+
+\[\int_0^tdt'\vec f(t)=\Delta\vec W_i\]
+
+\[\therefore\quad\Delta\vec v=-\frac{\zeta}{m}\vec v_i\Delta t+\frac{1}{m}\Delta\vec W_i\]\\
+
+\[\vec v_{i+1}=\vec v_i-\frac{\zeta}{m}\vec v_i\Delta t+\frac{1}{m}\Delta\vec W_i\]
+
+\[\vec v_{i+1}=\left(1-\frac{\zeta}{m}\Delta t\right)\vec v_i+\frac{1}{m}\Delta\vec W_i\]
+
+\newpage
+Proceso Wiener
+
+\[\langle\Delta\vec W_i\rangle=0\quad\to\quad\mu=0\]
+
+\[\langle\Delta\vec W_i\Delta\vec W_j\rangle=2\zeta k_BT\delta_{ij}\Delta t\quad\to\quad\sigma^2=2\zeta k_BT\Delta t\]
+
+\[\therefore\quad\vec v_{i+1}=\left(1-\frac{\zeta}{m}\Delta t\right)\vec v_i+\frac{1}{m}N(\mu,\sigma^2)\]\\
+
+\[\boxed{\vec v_{i+1}=\left(1-\frac{\zeta}{m}\Delta t\right)\vec v_i+\frac{1}{m}N(0,2\zeta k_BT\Delta t)}\]
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+
+\end{document}

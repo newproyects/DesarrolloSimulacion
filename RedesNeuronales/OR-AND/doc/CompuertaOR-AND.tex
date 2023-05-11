@@ -1,0 +1,185 @@
+\documentclass[10pt,a4papper]{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{cancel}
+\usepackage{multicol}
+\usepackage{blindtext}
+\usepackage{tikz}
+\usepackage[hidelinks]{hyperref}
+\usepackage[left=2.00cm, right=3.00cm, top=2.00cm, bottom=2.00cm]{geometry}
+\author{Angel Fdo. García Núñez}
+\date{Enero 18, 2023}
+\title{Estadisitica}
+
+\begin{document}
+
+\Huge
+Compuertas OR-AND usando perceptron\\
+
+Angel Fernando García Núñez
+
+\Large
+\newpage
+\[\text{Compuerta OR:}\]
+\[\begin{tabular}{| c | c | c |}
+  \hline
+  $x_1$ & $x_2$ & $y$\\
+  \hline
+  0 & 0 & 0\\
+  0 & 1 & 1\\
+  1 & 0 & 1\\
+  1 & 1 & 1\\
+  \hline
+\end{tabular}\]
+
+\[\text{Compuerta AND:}\]
+\[\begin{tabular}{| c | c | c |}
+  \hline
+  $x_1$ & $x_2$ & $y$\\
+  \hline
+  0 & 0 & 0\\
+  0 & 1 & 0\\
+  1 & 0 & 0\\
+  1 & 1 & 1\\
+  \hline
+\end{tabular}\]\\
+
+\[\text{Perceptron}\]
+
+\begin{center}
+  \begin{tikzpicture}
+    \node[draw=none](x1)at(0,0){$x_1$};
+    \node[draw=none](x2)at(0,-2){$x_2$};
+    \node[draw,shape=circle](w1)at(2,0){$w_1$};
+    \node[draw,shape=circle](w2)at(2,-2){$w_2$};
+    \node[draw=none](b)at(4,1){$b$};
+    \node[draw,shape=circle](n)at(4,-1){$\sum$};
+    \node[draw](act)at(6,-1){$\varphi$};
+    \node[draw=none](y)at(8,-1){$y$};
+    
+    \draw[->](x1)to(w1);
+    \draw[->](x2)to(w2);
+    \draw[->](b)to(n);
+    \draw[->](w1)to(n);
+    \draw[->](w2)to(n);
+    \draw[->](n)to(act);
+    \draw[->](act)to(y);
+  \end{tikzpicture}
+\end{center}
+
+\[b=w_0x_0\quad:\quad x_0=1\]
+
+\begin{center}
+  \begin{tikzpicture}
+    \node[draw=none](x0)at(0,0){$x_0=1$};
+    \node[draw=none](x1)at(0,-2){$x_1$};
+    \node[draw=none](x2)at(0,-4){$x_2$};
+    \node[draw,shape=circle](w0)at(2,0){$w_0$};
+    \node[draw,shape=circle](w1)at(2,-2){$w_1$};
+    \node[draw,shape=circle](w2)at(2,-4){$w_2$};
+    \node[draw,shape=circle](n)at(4,-2){$\sum$};
+    \node[draw](act)at(6,-2){$\varphi$};
+    \node[draw=none](y)at(8,-2){$y$};
+    
+    \draw[->](x0)to(w0);
+    \draw[->](x1)to(w1);
+    \draw[->](x2)to(w2);
+    \draw[->](w0)to(n);
+    \draw[->](w1)to(n);
+    \draw[->](w2)to(n);
+    \draw[->](n)to(act);
+    \draw[->](act)to(y);
+  \end{tikzpicture}
+\end{center}
+
+\newpage
+\begin{center}
+  \begin{tikzpicture}
+    \node[draw,shape=circle](x0)at(0,0){$x_0$};
+    \node[draw,shape=circle](x1)at(0,-2){$x_1$};
+    \node[draw,shape=circle](x2)at(0,-4){$x_2$};
+    \node[draw,shape=circle](n)at(3,-2);
+    \node[draw,shape=circle](y)at(5,-2){$y$};
+    
+    \draw[->](x0)to node[draw=none,above]{$w_0$}(n);
+    \draw[->](x1)to node[draw=none,above]{$w_1$}(n);
+    \draw[->](x2)to node[draw=none,above]{$w_2$}(n);
+    \draw[->](n)to node[draw=none,above]{$\varphi$}(y);
+  \end{tikzpicture}
+\end{center}
+
+\[\text{Comportamiento del perceptron}\]
+
+\[\vec x=(1,x_1,x_2)\quad,\quad\vec w=(w_0,w_1,w_2)\]
+
+\[\varphi(s)=
+\left\{\begin{array}{ccc}
+1 & : & s\geq 0 \\
+0 & : & s<0
+\end{array}\]
+
+\[y=\varphi(\vec x\cdot\vec w)\]\\
+
+\[\text{Aprendizaje}\]
+
+\[\text{Vector de pesos en la iteración }i\]
+\[\vec w_i=(w_{i,0},w_{i,1},w_{i,2})\]
+
+\[\text{Función de error}\]
+\[e=y-y_i\]
+
+\[\text{Factor de aprendizaje}\]
+\[\alpha\in(0,1)\]
+
+\[\text{Algoritmo de aprendizaje}\]
+\[w_{i+1,j}=w_{i,j}+\alpha ex_j\]
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+
+\end{document}

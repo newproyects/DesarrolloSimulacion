@@ -1,0 +1,36 @@
+Simulación de movimiento Browniano por proceso de Weiner - (Angel García)
+
+En este directorio se encuentran tres ejemplos donde se usa el mismo código
+para simular un movimiento Browniano en distintas dimensiones, para ejecutar
+distintos ejemplos no es necesario modificar el código, basta con midificar
+el archivo: config.ini
+
+En dicho archivo se encuentran los siguientes parámetros de simulación:
+C (Constante de fricción)
+k (Constante de Boltzmann)
+T (Temperatura)
+M (Masa de las partículas)
+R (Número de dimensiones)
+h (Desplazamiento temporal)
+n (Número de partículas)
+m (Número de iteraciones)
+
+Para poder ejecutar el script es necesario contar con los siguientes modulos
+de python3:
+Numpy
+Pandas
+Matplotlib
+Argparse
+Configparser
+
+Para ejecutar el script se utiliza es siguiente comando:
+
+python3 main.py --inpf=config.ini --outf=out.csv
+
+Una vez ejecutado, producirá las gráficas de posición y velocidad,
+despues se exportaran los datos en un archivo out.csv
+
+Para programar este sistema se uso como teoría la ecuación de Langevin,
+solucionada numéricamente mediante el metodo de Euler y tomando la fuerza
+aleatoria como un proceso de Weiner, para consultar dicha teoría puede
+revisarse el archivo Browniano.pdf en el directorio doc.

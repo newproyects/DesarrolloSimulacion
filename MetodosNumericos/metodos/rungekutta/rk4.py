@@ -1,0 +1,30 @@
+def order1(f,x,t,h):
+    k1=h*f(x,t)
+    k2=h*f(x+0.5*k1,t+0.5*h)
+    k3=h*f(x+0.5*k2,t+0.5*h)
+    k4=h*f(x+k1,t+h)
+    return x+(1/6)*(k1+2*k2+2*k3+k4)
+
+def order2sys2(f,g,vx,vy,x,y,t,h):
+    k1=h*vx
+    l1=h*f(vx,vy,x,y,t)
+    q1=h*vy
+    m1=h*g(vx,vy,x,y,t)
+    k2=h*(vx+0.5*l1)
+    l2=h*f(vx+0.5*l1,vy+0.5*m1,x+0.5*k1,y+0.5*q1,t)
+    q2=h*(vy+0.5*m1)
+    m2=h*g(vx+0.5*l1,vy+0.5*m1,x+0.5*k1,y+0.5*q1,t)
+    k3=h*(vx+0.5*l2)
+    l3=h*f(vx+0.5*l2,vy+0.5*m2,x+0.5*k2,y+0.5*q2,t)
+    q3=h*(vy+0.5*m2)
+    m3=h*g(vx+0.5*l2,vy+0.5*m2,x+0.5*k2,y+0.5*q2,t)
+    k4=h*(vx+l3)
+    l4=h*f(vx+l3,vy+m3,x+k3,y+q3,t)
+    q4=h*(vy+m3)
+    m4=h*g(vx+l3,vy+m3,x+k3,y+q3,t)
+    x+=(1/6)*(k1+2*k2+2*k3+k4)
+    y+=(1/6)*(q1+2*q2+2*q3+q4)
+    vx+=(1/6)*(l1+2*l2+2*l3+l4)
+    vy+=(1/6)*(m1+2*m2+2*m3+m4)
+    return vx,vy,x,y
+    

@@ -1,0 +1,183 @@
+\documentclass[10pt,a4papper]{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{cancel}
+\usepackage[hidelinks]{hyperref}
+\usepackage[left=1.50cm, right=3.00cm, top=2.00cm, bottom=2.00cm]{geometry}
+\author{Angel Fdo. García Núñez}
+\date{Septiembre 17, 2020}
+\title{Estadisitica}
+
+\begin{document}
+
+\Huge
+Desarrollo y simulación de péndulo de masa doble\\
+
+Angel Fernando García Núñez
+
+\newpage
+\LARGE
+Formulación de Euler-Lagrange\\\\
+\Large
+\[\frac{d}{dt}\left[\frac{\partial\mathcal{L}}{\partial\dot q}\right]-\frac{\partial\mathcal{L}}{\partial q}=0\quad,\quad\mathcal{L}=T-V\]\\
+Coordenadas generalizadas
+\[q_1=\theta_1\]
+\[q_2=\theta_2\]\\
+\[S_1=2l_1\quad,\quad S_2=l_2\]
+\[x_1=\frac{S_1}{2}\sin\theta_1\quad,\quad\dot x_1=\frac{S_1}{2}\dot\theta_1\cos\theta_1\]
+\[y_1=-\frac{S_1}{2}\cos\theta_1\quad,\quad\dot y_1=\frac{S_1}{2}\dot\theta_1\sin\theta_1\]\\
+\[x_2=2x_1+l_2\sin\theta_2\to x_2=S_1\sin\theta_1+l_2\sin\theta_2\quad,\quad\dot x_2=S_1\dot\theta_1\cos\theta_1+l_2\dot\theta_2\cos\theta_2\]
+\[y_2=2y_1-l_2\cos\theta_2\to y_2=-S_1\cos\theta_1-l_2\cos\theta_2\quad,\quad\dot y_2=S_1\dot\theta_1\sin\theta_1+l_2\dot\theta_2\sin\theta_2\]\\
+Energía potencial
+\[V=m_1gy_1+m_2gy_2\to V=-m_1g\frac{S_1}{2}\cos\theta_1+m_2g(-S_1\cos\theta_1-l_2\cos\theta_2)\]\\
+\[V=-m_1g\frac{S_1}{2}\cos\theta_1-m_2gS_1\cos\theta_1-m_2gl_2\cos\theta_2\]\\
+\[\mu=\frac{1}{2}m_1+m_2\]\\
+\[V=-\mu gS_1\cos\theta_1-m_2gl_2\cos\theta_2\]
+
+\newpage
+Energía cinética
+\[T=\frac{1}{2}I_1\dot\theta_1^2+\frac{1}{2}I_2\dot\theta_2^2+\frac{1}{2}m_2(\dot x_2+\dot y_2)\]\\
+\[\dot x_2^2=(S_1\dot\theta_1\cos\theta_1+l_2\dot\theta_2\cos\theta_2)^2\to\dot x_2^2=S_1^2\dot\theta_1^2\cos^2\theta_1+l_2^2\dot\theta_2^2\cos^2\theta_2+2S_1l_2\dot\theta_1\dot\theta_2\cos\theta_1\cos\theta_2\]
+\[\dot y_2^2=(S_1\dot\theta_1\sin\theta_1+l_2\dot\theta_2\sin\theta_2)^2\to\dot y_2^2=S_1^2\dot\theta_1^2\sin^2\theta_1+l_2^2\dot\theta_2^2\sin^2\theta_2+2S_1l_2\dot\theta_1\dot\theta_2\sin\theta_1\sin\theta_2\]\\
+
+\[T=\frac{1}{2}I_1\dot\theta_1^2+\frac{1}{2}I_2\dot\theta_2^2+\]
+\[\frac{1}{2}m_2\left(S_1^2\dot\theta_1^2\cos^2\theta_1+l_2^2\dot\theta_2^2\cos^2\theta_2+2S_1l_2\dot\theta_1\dot\theta_2\cos\theta_1\cos\theta_2+\right\]
+\[\left S_1^2\dot\theta_1^2\sin^2\theta_1+l_2^2\dot\theta_2^2\sin^2\theta_2+2S_1l_2\dot\theta_1\dot\theta_2\sin\theta_1\sin\theta_2\right)\]\\
+
+\[T=\frac{1}{2}I_1\dot\theta_1^2+\frac{1}{2}I_2\dot\theta_2^2+\]
+\[\frac{1}{2}m_2\left(S_1^2\dot\theta_1^2+l_2^2\dot\theta_2^2+2S_1l_2\dot\theta_1\dot\theta_2\cos\theta_1\cos\theta_2+2S_1l_2\dot\theta_1\dot\theta_2\sin\theta_1\sin\theta_2\right)\]
+
+
+\newpage
+Energía cinética\\
+Producto de cosenos
+\[\cos a\cos b=\frac{1}{2}\left[cos(a+b)+cos(a-b)\right]\]
+Producto de senos
+\[\sin a\sin b=\frac{1}{2}\left[cos(a-b)-cos(a+b)\right]\]\\
+\[T=\frac{1}{2}I_1\dot\theta_1^2+\frac{1}{2}I_2\dot\theta_2^2+\frac{1}{2}m_2\left(S_1^2\dot\theta_1^2+l_2^2\dot\theta_2^2+2S_1l_2\dot\theta_1\dot\theta_2\cos(\theta_1-\theta_2)\right)\]\\
+
+\[T=\frac{1}{2}I_1\dot\theta_1^2+\frac{1}{2}I_2\dot\theta_2^2+\frac{1}{2}m_2S_1^2\dot\theta_1^2+\frac{1}{2}m_2l_2^2\dot\theta_2^2+m_2S_1l_2\dot\theta_1\dot\theta_2\cos(\theta_1-\theta_2)\]
+
+\newpage
+Lagrangiano
+\[\mathcal{L}=T-V\]\\
+\[\mathcal{L}=\frac{1}{2}I_1\dot\theta_1^2+\frac{1}{2}I_2\dot\theta_2^2+\frac{1}{2}m_2S_1^2\dot\theta_1^2+\frac{1}{2}m_2l_2^2\dot\theta_2^2+m_2S_1l_2\dot\theta_1\dot\theta_2\cos(\theta_1-\theta_2)+\mu gS_1\cos\theta_1+m_2gl_2\cos\theta_2\]\\
+Derivadas del Lagrangiano
+\[\frac{\partial\mathcal{L}}{\partial\theta_1}=-m_2S_1l_2\dot\theta_1\dot\theta_2\sin(\theta_1-\theta_2)-\mu gS_1\sin\theta_1\]
+\[\frac{\partial\mathcal{L}}{\partial\dot\theta_1}=I_1\dot\theta_1+m_2S_1^2\dot\theta_1+m_2S_1l_2\dot\theta_2\cos(\theta_1-\theta_2)\]
+\[\frac{d}{dt}\left[\frac{\partial\mathcal{L}}{\partial\dot\theta_1}\right]=I_1\ddot\theta_1+m_2S_1^2\ddot\theta_1+m_2S_1l_2\ddot\theta_2\cos(\theta_1-\theta_2)+m_2S_1l_2\dot\theta_2^2\sin(\theta_1-\theta_2)-m_2S_1l_2\dot\theta_1\dot\theta_2\sin(\theta_1-\theta_2)\]\\
+
+\[\frac{\partial\mathcal{L}}{\partial\theta_2}=m_2S_1l_2\dot\theta_1\dot\theta_2\sin(\theta_1-\theta_2)-m_2gl_2\sin\theta_2\]
+\[\frac{\partial\mathcal{L}}{\partial\dot\theta_2}=I_2\dot\theta_2+m_2l_2^2\dot\theta_2+m_2S_1l_2\dot\theta_1\cos(\theta_1-\theta_2)\]
+\[\frac{d}{dt}\left[\frac{\partial\mathcal{L}}{\partial\dot\theta_2}\right]=I_2\ddot\theta_2+m_2l_2^2\ddot\theta_2+m_2S_1l_2\ddot\theta_1\cos(\theta_1-\theta_2)-m_2S_1l_2\dot\theta_1^2\sin(\theta_1-\theta_2)+m_2S_1l_2\dot\theta_1\dot\theta_2\sin(\theta_1-\theta_2)\]
+
+\newpage
+Ecuaciones de Lagrange
+\[\frac{d}{dt}\left[\frac{\partial\mathcal{L}}{\partial\dot \theta_1}\right]-\frac{\partial\mathcal{L}}{\partial \theta_1}=0\]\\
+
+\[I_1\ddot\theta_1+m_2S_1^2\ddot\theta_1+m_2S_1l_2\ddot\theta_2\cos(\theta_1-\theta_2)+m_2S_1l_2\dot\theta_2^2\sin(\theta_1-\theta_2)-m_2S_1l_2\dot\theta_1\dot\theta_2\sin(\theta_1-\theta_2)+\]
+\[m_2S_1l_2\dot\theta_1\dot\theta_2\sin(\theta_1-\theta_2)+\mu gS_1\sin\theta_1=0\]\\
+\[I_1\ddot\theta_1+m_2S_1^2\ddot\theta_1+m_2S_1l_2\ddot\theta_2\cos(\theta_1-\theta_2)+m_2S_1l_2\dot\theta_2^2\sin(\theta_1-\theta_2)+\mu gS_1\sin\theta_1=0\]\\
+
+\[\frac{d}{dt}\left[\frac{\partial\mathcal{L}}{\partial\dot \theta_2}\right]-\frac{\partial\mathcal{L}}{\partial \theta_2}=0\]\\
+
+\[I_2\ddot\theta_2+m_2l_2^2\ddot\theta_2+m_2S_1l_2\ddot\theta_1\cos(\theta_1-\theta_2)-m_2S_1l_2\dot\theta_1^2\sin(\theta_1-\theta_2)+m_2S_1l_2\dot\theta_1\dot\theta_2\sin(\theta_1-\theta_2)-\]
+\[m_2S_1l_2\dot\theta_1\dot\theta_2\sin(\theta_1-\theta_2)+m_2gl_2\sin\theta_2=0\]\\
+\[I_2\ddot\theta_2+m_2l_2^2\ddot\theta_2+m_2S_1l_2\ddot\theta_1\cos(\theta_1-\theta_2)-m_2S_1l_2\dot\theta_1^2\sin(\theta_1-\theta_2)+m_2gl_2\sin\theta_2=0\]
+
+\newpage
+Ecuaciones de movimiento\\\\
+\[\boxed{
+  \begin{array}{rcl}
+    \ddot\theta_1+(I_1+m_2S_1^2)^{-1}\left[m_2S_1l_2\ddot\theta_2\cos(\theta_1-\theta_2)+m_2S_1l_2\dot\theta_2^2\sin(\theta_1-\theta_2)+\mu gS_1\sin\theta_1\right]=0\\\\
+    \ddot\theta_2+(I_2+m_2l_2^2)^{-1}\left[m_2S_1l_2\ddot\theta_1\cos(\theta_1-\theta_2)-m_2S_1l_2\dot\theta_1^2\sin(\theta_1-\theta_2)+m_2gl_2\sin\theta_2\right]=0
+  \end{array}
+}\]
+
+\newpage
+Solución numerica por\\
+Metodo de Runge Kutta de orden 4\\\\
+\large
+\begin{center}
+  \begin{tabular}{|c|c|}
+    \hline
+    $\frac{d\theta_1}{dt}=\omega_1$ & $\frac{d\omega_1}{dt}=f(\theta_1,\theta_2,\omega_1,\omega_2,t)$\\
+    \hline
+    $k_1=h\omega_1$ & $c_1=hf(\theta_1,\theta_2,\omega_1,\omega_2,t)$\\
+    $k_2=h(\omega_1+\frac{1}{2}c_1)$ & $c_2=hf(\theta_1+\frac{1}{2}k_1,\theta_2+\frac{1}{2}n_1,\omega_1+\frac{1}{2}c_1,\omega_2+\frac{1}{2}m_1,t+\frac{1}{2}h)$\\
+    $k_3=h(\omega_1+\frac{1}{2}c_2)$ & $c_3=hf(\theta_1+\frac{1}{2}k_2,\theta_2+\frac{1}{2}n_2,\omega_1+\frac{1}{2}c_2,\omega_2+\frac{1}{2}m_2,t+\frac{1}{2}h)$\\
+    $k_4=h(\omega_1+c_3)$ & $c_4=hf(\theta_1+k_3,\theta_2+n_3,\omega_1+c_3,\omega_2+m_3,t+h)$\\
+    \hline
+    $\theta_1(t+h)=\theta_1(t)+\frac{1}{6}(k_1+2k_2+2k_3+k_4)$ & $\omega_1(t+h)=\omega_1(t)+\frac{1}{6}(c_1+2c_2+2c_3+c_4)$\\
+    \hline
+  \end{tabular}
+\end{center}
+\begin{center}
+  \begin{tabular}{|c|c|}
+    \hline
+    $\frac{d\theta_2}{dt}=\omega_2$ & $\frac{d\omega_2}{dt}=u(\theta_1,\theta_2,\omega_1,\omega_2,t)$\\
+    \hline
+    $n_1=h\omega_2$ & $m_1=hu(\theta_1,\theta_2,\omega_1,\omega_2,t)$\\
+    $n_2=h(\omega_2+\frac{1}{2}m_1)$ & $m_2=hu(\theta_1+\frac{1}{2}k_1,\theta_2+\frac{1}{2}n_1,\omega_1+\frac{1}{2}c_1,\omega_2+\frac{1}{2}m_1,t+\frac{1}{2}h)$\\
+    $n_3=h(\omega_2+\frac{1}{2}m_2)$ & $m_3=hu(\theta_1+\frac{1}{2}k_2,\theta_2+\frac{1}{2}n_2,\omega_1+\frac{1}{2}c_2,\omega_2+\frac{1}{2}m_2,t+\frac{1}{2}h)$\\
+    $n_4=h(\omega_2+m_3)$ & $m_4=hu(\theta_1+k_3,\theta_2+n_3,\omega_1+c_3,\omega_2+m_3,t+h)$\\
+    \hline
+    $\theta_2(t+h)=\theta_2(t)+\frac{1}{6}(n_1+2n_2+2n_3+n_4)$ & $\omega_2(t+h)=\omega_2(t)+\frac{1}{6}(m_1+2m_2+2m_3+m_4)$\\
+    \hline
+  \end{tabular}
+\end{center}
+
+\newpage
+\Large
+Cambio de variable\\
+\[\frac{d\theta_1}{dt}=\omega_1\to\frac{d^2\theta_1}{dt^2}=\dot\omega_1\quad,\quad\frac{d\theta_2}{dt}=\omega_2\to\frac{d^2\theta_2}{dt^2}=\dot\omega_2\]\\
+
+\[\dot\omega_1=-(I_1+m_2S_1^2)^{-1}\left[m_2S_1l_2\dot\omega_2\cos(\theta_1-\theta_2)+m_2S_1l_2\omega_2^2\sin(\theta_1-\theta_2)+\mu gS_1\sin\theta_1\right]\]
+\[\dot\omega_2=-(I_2+m_2l_2^2)^{-1}\left[m_2S_1l_2\dot\omega_1\cos(\theta_1-\theta_2)-m_2S_1l_2\omega_1^2\sin(\theta_1-\theta_2)+m_2gl_2\sin\theta_2\right]\]\\
+
+%\[\dot\omega_1=\left[1-m_2^2S_1^2l_2^2\cos^2(\theta_1-\theta_2)(I_1+m_2S_1^2)^{-1}(I_2+m_2l_2^2)^{-1}\right]^{-1}\]
+%\[\left\{m_2S_1l_2\cos(\theta_1-\theta_2)(I_1+m_2S_1^2)^{-1}(I_2+m_2l_2^2)^{-1}\left[-m_2S_1l_2\omega_1^2\sin(\theta_1-\theta_2)+m_2gl_2\sin\theta_2\right]\]
+%\[\left+(I_1+m_2S_1^2)^{-1}\left[m_2S_1l_2\omega_2^2\sin(\theta_1-\theta_2)+\mu gS_1\sin\theta_1\right]\right\}\]
+
+Simplificación y despeje
+\[ms=m_2S_2^2\]
+\[ml=m_2l_2^2\]
+\[msl=m_2S_2l_2\]
+\[i_1=(I_1+m_2S_1^2)^{-1}\]
+\[i_2=(I_2+m_2l_2^2)^{-1}\]
+\[\varepsilon_1=m_2S_1l_2\omega_2^2\sin(\theta_1-\theta_2)+\mu gS_1\sin\theta_1\]
+\[\varepsilon_2=-msl\omega_1^2\sin(\theta_1-\theta_2)+m_2gl_2\sin\theta_2\]\\
+
+\[\dot\omega_1=-i_1\left[msl\dot\omega_2\cos(\theta_1-\theta_2)+\varepsilon_1\right]\]
+\[\dot\omega_2=-i_2\left[msl\dot\omega_1\cos(\theta_1-\theta_2)+\varepsilon_2\right]\]\\
+
+\[\dot\omega_1=-i_1msl\dot\omega_2\cos(\theta_1-\theta_2)-i_1\varepsilon_1\]
+\[\dot\omega_1=i_1i_2msl\cos(\theta_1-\theta_2)\left[msl\dot\omega_1\cos(\theta_1-\theta_2)+\varepsilon_2\right]-i_1\varepsilon_1\]
+\[\dot\omega_1=i_1i_2(msl)^2\dot\omega_1\cos^2(\theta_1-\theta_2)+i_1i_2msl\cos(\theta_1-\theta_2)\varepsilon_2-i_1\varepsilon_1\]
+\[\dot\omega_1[1-i_1i_2(msl)^2\cos^2(\theta_1-\theta_2)]=i_1i_2msl\cos(\theta_1-\theta_2)\varepsilon_2-i_1\varepsilon_1\]\\
+
+\[\dot\omega_1=\frac{[i_1i_2msl\cos(\theta_1-\theta_2)\varepsilon_2-i_1\varepsilon_1]}{[1-i_1i_2(msl)^2\cos^2(\theta_1-\theta_2)]}\]
+
+
+\newpage
+\[\dot\omega_1=\frac{(I_1+m_2S_1^2)^{-1}(I_2+m_2l_2^2)^{-1}m_2S_2l_2\cos(\theta_1-\theta_2)[-msl\omega_1^2\sin(\theta_1-\theta_2)+m_2gl_2\sin\theta_2]}{[1-(I_1+m_2S_1^2)^{-1}(I_2+m_2l_2^2)^{-1}m_2^2S_2^2l_2^2\cos^2(\theta_1-\theta_2)]}\]
+\[-\frac{(I_1+m_2S_1^2)^{-1}[m_2S_1l_2\omega_2^2\sin(\theta_1-\theta_2)+\mu gS_1\sin\theta_1]}{[1-(I_1+m_2S_1^2)^{-1}(I_2+m_2l_2^2)^{-1}m_2^2S_2^2l_2^2\cos^2(\theta_1-\theta_2)]}\]\\
+
+Funciones de iteración
+\[\boxed{
+  \begin{array}{lcl}
+    f(\theta_1,\theta_2,\omega_1,\omega_2,t)=\frac{d\omega_1}{dt}\\
+    f(\theta_1,\theta_2,\omega_1,\omega_2,t)=\\\\
+    \frac{(I_1+m_2S_1^2)^{-1}(I_2+m_2l_2^2)^{-1}m_2S_2l_2\cos(\theta_1-\theta_2)[-msl\omega_1^2\sin(\theta_1-\theta_2)+m_2gl_2\sin\theta_2]}{[1-(I_1+m_2S_1^2)^{-1}(I_2+m_2l_2^2)^{-1}m_2^2S_2^2l_2^2\cos^2(\theta_1-\theta_2)]}\\\\
+    -\frac{(I_1+m_2S_1^2)^{-1}[m_2S_1l_2\omega_2^2\sin(\theta_1-\theta_2)+\mu gS_1\sin\theta_1]}{[1-(I_1+m_2S_1^2)^{-1}(I_2+m_2l_2^2)^{-1}m_2^2S_2^2l_2^2\cos^2(\theta_1-\theta_2)]}\\\\\\
+    
+    u(\theta_1,\theta_2,\omega_1,\omega_2,t)=\frac{d\omega_2}{dt}\\
+    u(\theta_1,\theta_2,\omega_1,\omega_2,t)=-(I_2+m_2l_2^2)^{-1}\left[m_2S_1l_2\cos(\theta_1-\theta_2)f(\theta_1,\theta_2,\omega_1,\omega_2,t)\\
+      \left-m_2S_1l_2\omega_1^2\sin(\theta_1-\theta_2)+m_2gl_2\sin\theta_2\right]
+  \end{array}
+}\]
+
+
+
+\end{document}

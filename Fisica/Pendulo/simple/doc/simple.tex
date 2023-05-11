@@ -1,0 +1,123 @@
+\documentclass[10pt,a4papper]{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{cancel}
+\usepackage[hidelinks]{hyperref}
+\usepackage[left=1.00cm, right=3.00cm, top=2.00cm, bottom=2.00cm]{geometry}
+\author{Angel Fdo. García Núñez}
+\date{Septiembre 17, 2020}
+\title{Estadisitica}
+
+\begin{document}
+
+\Huge
+Desarrollo y simulación de péndulo simple\\
+
+Angel Fernando García Núñez
+
+\newpage
+\LARGE
+Formulación de Newton\\\\
+\Large
+\[\sum\vec F=m\vec a\]\\
+Sumatoria de Fuerzas
+\[\vec W\equiv\text{peso}\]
+\[\vec T\equiv\text{tensión}\]\\
+\[\sum\vec F=\vec T+\vec W\]\\
+Descomposición de fuerzas(eje normal y eje tangente)
+\[\sum\vec F=\sum\vec F_n+\sum\vec F_t\quad,\quad\sum F=\left|\sum\vec F\right|\]
+\[\vec W=\vec W_n+\vec W_t\quad,\quad W=|\vec W|\to W=mg\]
+\[\vec T=|\vec T|\hat n\quad,\quad T=|\vec T|\to\vec T=T\hat n\]\\
+Fuerzas en el Eje normal
+\[\vec W_n=|\vec W|\vec n\to\vec W_n=-W\cos\theta\hat n\]
+\[\vec W_n=-mg\cos\theta\hat n\]\\
+\[\sum\vec F_n=0\to\vec T+\vec W_n=0\]
+\[\vec T=mg\cos\theta\hat n\to T=mg\cos\theta\]\\
+Fuerzas en el Eje tangente
+\[\vec W_t=|\vec W|\vec t\to\vec W_t=-W\sin\theta\hat t\]
+\[\quad\sum\vec F_t=\vec W_t\to\sum\vec F_t=-mg\sin\theta\hat t\to\sum F_t=-mg\sin\theta\]
+
+\newpage
+Ecuación de movimiento
+\[\sum\vec F=\cancelto{0}{\sum\vec F_n}+\sum\vec F_t\to\sum\vec F=\sum\vec F_t\]
+\[\sum\vec F_t=m\vec a_t\]
+\[m\vec a_t=-mg\sin\theta\hat t\to a_t=-g\sin\theta\]\\
+\[\vec a_t=\vec r\times\vec\omega\quad,\quad|\vec r|=l\equiv\text{cte.}\to a_t=l\omega\]
+\[a_t=l\frac{d^2\theta}{dt^2}\to l\frac{d^2\theta}{dt^2}=-g\sin\theta\]\\
+\[\boxed{\therefore\quad\frac{d^2\theta}{dt^2}+\frac{g}{l}\sin\theta=0}\]
+
+\newpage
+\LARGE
+Formulación de Euler-Lagrange\\\\
+\Large
+\[\frac{d}{dt}\left[\frac{\partial\mathcal{L}}{\partial\dot q}\right]-\frac{\partial\mathcal{L}}{\partial q}=0\quad,\quad\mathcal{L}=T-V\]\\
+Coordenadas generalizadas
+\[q_1=\theta\]\\
+\[x=l\sin\theta\quad,\quad\dot x=l\dot\theta\cos\theta\]
+\[y=-l\cos\theta\quad,\quad\dot y=l\dot\theta\sin\theta\]\\
+Energía potencial
+\[V=mgy\to V=-mgl\cos\theta\]\\
+Energía cinética
+\[T=\frac{1}{2}m(\dot x^2+\dot y^2)\]
+\[T=\frac{1}{2}m[(l\dot\theta\cos\theta)^2+(l\dot\theta\sin\theta)^2]\to T=\frac{1}{2}m[l^2\dot\theta^2\cos^2\theta+l^2\dot\theta^2\sin^2\theta]\]
+\[T=\frac{1}{2}ml^2\dot\theta^2\]\\
+Lagrangiano
+\[\mathcal{L}=T-V\]
+\[\mathcal{L}=\frac{1}{2}ml^2\dot\theta^2+mgl\cos\theta\]\\
+Derivadas del Lagrangiano
+\[\frac{\partial\mathcal{L}}{\partial\theta}=-mgl\sin\theta\]
+\[\frac{\partial\mathcal{L}}{\partial\dot\theta}=ml^2\dot\theta\]
+\[\frac{d}{dt}\left[\frac{\partial\mathcal{L}}{\partial\dot\theta}\right]=ml^2\ddot\theta\]
+
+\newpage
+Ecuación de movimiento
+\[\frac{d}{dt}\left[\frac{\partial\mathcal{L}}{\partial\dot\theta}\right]-\frac{\partial\mathcal{L}}{\partial\theta}=0\]
+\[ml^2\ddot\theta+mgl\sin\theta=0\to l^2\ddot\theta+gl\sin\theta=0\]\\
+\[\boxed{\therefore\quad\ddot\theta+\frac{g}{l}\sin\theta=0}\]
+
+\newpage
+Solución analítica aproximada para ángulos pequeños
+\[\theta\ll\frac{\pi}{2}\to\sin\theta\approx\theta\]
+\[\therefore\quad\frac{g}{l}\sin\theta\approx\frac{g}{l}\theta\]\\
+\[\ddot\theta+\frac{g}{l}\sin\theta=0\to\quad\ddot\theta+\frac{g}{l}\theta=0\]\\
+Ecuación no lineal de segundo orden
+\[\ddot\theta+\frac{g}{l}\theta=0\]
+\[\omega=\sqrt\frac{g}{l}\]\\
+\[\theta=e^{\beta t}\]
+\[\dot\theta=\beta e^{\beta t}\]
+\[\ddot\theta=\beta^2e^{\beta t}\]\\
+\[\ddot\theta+\frac{g}{l}\theta=0\to\beta^2e^{\beta t}+\omega^2e^{\beta t}=0\]
+\[\beta^2=-\omega^2\to\beta=\sqrt{-\omega^2}\to\beta=\omega\sqrt{-1}\]
+\[\beta=\pm i\omega\]
+
+\newpage
+\[\theta=C_1e^{i\omega t}+C_2e^{-i\omega t}\]
+\[\theta=C_1e^{i\omega t}+C_2e^{-i\omega t}\]
+\[e^{\pm ik}=\cos k\pm i\sin k\]
+\[\theta=C_1\cos(\omega t)+iC_1\sin(\omega t)+C_2\cos(\omega t)-iC_2\sin(\omega t)\]
+\[\theta=(C_1+C_2)\cos(\omega t)+(C_1-C_2)i\sin(\omega t)\]
+\[A=C_1+C_2\quad,\quad B=i(C_1-C_2)\]\\
+\[\theta=A\cos(\omega t)+B\sin(\omega t)\]
+\[\dot\theta=-A\omega\sin(\omega t)+B\omega\cos(\omega t)\]\\
+\[\theta(t=0)=\theta_0\quad,\quad\theta(t=0)=A\cancelto{1}{\cos(\omega(0))}+B\cancelto{0}{\sin(\omega(0))}\to A=\theta_0\]
+\[\dot\theta(t=0)=0\quad,\quad\dot\theta(t=0)=-A\cancelto{0}{\omega\sin(\omega(0))}+B\cancelto{1}{\omega\cos(\omega(0))}\to B=0\]\\
+\[\therefore\quad\theta=Acos(\phi+\omega t)\]\\
+\[\boxed{\theta(t)=Acos\left(\phi+\sqrt\frac{g}{l}t\right)}\]
+
+\newpage
+Solución númerica por método de Euler
+\[x_{i+1}=x_i+h\dot x(x_i,t_i)\]\\
+\[\ddot\theta+\frac{g}{l}\sin\theta=0\]
+\[\omega=\dot\theta\to\dot\omega=\ddot\theta\]
+\[\dot\omega=-\frac{g}{l}\sin\theta\]\\
+\[\boxed{
+  \begin{array}{rcl}
+    t_{i+1}=t_i+h\\
+    \theta_{i+1}=\theta_i+h\omega_{i+1}\\
+    \omega_{i+1}=\omega_i-h\frac{g}{l}\sin\theta_i
+  \end{array}
+}
+\]\\
+
+\end{document}

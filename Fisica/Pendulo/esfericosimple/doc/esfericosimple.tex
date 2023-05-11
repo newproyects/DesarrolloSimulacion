@@ -1,0 +1,142 @@
+\documentclass[10pt,a4papper]{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{cancel}
+\usepackage{multicol}
+\usepackage{blindtext}
+\usepackage[hidelinks]{hyperref}
+\usepackage[left=2.00cm, right=3.00cm, top=2.00cm, bottom=2.00cm]{geometry}
+\author{Angel Fdo. García Núñez}
+\date{Septiembre 17, 2020}
+\title{Estadisitica}
+
+\begin{document}
+
+\Huge
+Desarrollo de péndulo esférico\\
+
+Angel Fernando García Núñez
+
+\newpage
+\LARGE
+Formulación de Euler-Lagrange\\\\
+\Large
+\[\frac{d}{dt}\left[\frac{\partial\mathcal{L}}{\partial\dot q}\right]-\frac{\partial\mathcal{L}}{\partial q}=0\quad,\quad\mathcal{L}=T-V\]\\
+
+Coordenadas generalizadas
+\[q_1=\theta\]
+\[q_2=\varphi\]
+
+\[x=l\cos\theta\sin\varphi\]
+\[y=l\sin\theta\sin\varphi\]
+\[z=-l\cos\varphi\]
+
+\[\dot x=-l\dot\theta\sin\theta\sin\varphi+l\dot\varphi\cos\theta\cos\varphi\]
+\[\dot y=l\dot\theta\cos\theta\sin\varphi+l\dot\varphi\sin\theta\cos\varphi\]
+\[\dot z=l\dot\varphi\sin\varphi\]
+
+\[\dot x^2=l^2\dot\theta^2\sin^2\theta\sin^2\varphi+l^2\dot\varphi^2\cos^2\theta\cos^2\varphi-2l^2\dot\theta\dot\varphi\cos\theta\sin\theta\cos\varphi\sin\varphi\]
+\[\dot y^2=l^2\dot\theta^2\cos^2\theta\sin^2\varphi+l^2\dot\varphi^2\sin^2\theta\cos^2\varphi+2l^2\dot\theta\dot\varphi\cos\theta\sin\theta\cos\varphi\sin\varphi\]
+\[\dot z^2=l^2\dot\varphi^2\sin^2\varphi\]
+
+\[\dot x^2+\dot y^2+\dot z^2=l^2\dot\theta^2\sin^2\varphi+l^2\dot\varphi^2\]
+
+\newpage
+Energía potencial
+
+\[V=mgz\to V=-mgl\cos\varphi\]
+
+Energía cinética
+
+\[T=\frac{1}{2}m(\dot x^2+\dot y^2+\dot z^2)\]
+\[T=\frac{1}{2}m(l^2\dot\theta^2\sin^2\varphi+l^2\dot\varphi^2)\]\\
+  
+Lagrangiano
+
+\[\mathcal{L}=T-V\]
+
+\[\mathcal{L}=\frac{1}{2}m(l^2\dot\theta^2\sin^2\varphi+l^2\dot\varphi^2)+mgl\cos\varphi\]\\
+
+Derivadas parciales del Lagrangiano
+
+\[\frac{\partial\mathcal{L}}{\partial\theta}=0\]
+\[\frac{\partial\mathcal{L}}{\partial\dot\theta}=ml^2\dot\theta\sin^2\varphi\]
+\[\frac{d}{dt}\left[\frac{\partial\mathcal{L}}{\partial\dot\theta}\right]=ml^2\ddot\theta\sin^2\varphi+ml^2\dot\theta\dot\varphi\sin2\varphi\]\\
+
+\[\frac{\partial\mathcal{L}}{\partial\varphi}=ml^2\dot\theta^2\sin\varphi\cos\varphi-mgl\sin\varphi\]
+\[\frac{\partial\mathcal{L}}{\partial\dot\varphi}=ml^2\dot\varphi\]
+\[\frac{d}{dt}\left[\frac{\partial\mathcal{L}}{\partial\dot\varphi}\right]=ml^2\ddot\varphi\]
+
+\newpage
+Ecuación de movimiento
+
+\[\frac{d}{dt}\left[\frac{\partial\mathcal{L}}{\partial\dot\theta}\right]-\frac{\partial\mathcal{L}}{\partial\theta}=0\]\\
+
+\[\frac{d}{dt}\left[ml^2\dot\theta\sin^2\varphi\right]=0\quad\to\quad\frac{d}{dt}\left[\dot\theta\sin^2\varphi\right]=0\]
+
+\[\boxed{h=\dot\theta\sin^2\varphi\quad\to\quad h\equiv\text{cte.}}\]\\
+
+\[ml^2\ddot\theta\sin^2\varphi+ml^2\dot\theta\dot\varphi\sin2\varphi=0\quad\to\quad\ddot\theta\sin^2\varphi+2\dot\theta\dot\varphi\cos\varphi\sin\varphi=0\]
+
+\[\boxed{\ddot\theta\sin\varphi+2\dot\theta\dot\varphi\cos\varphi=0}\]
+
+\[\ddot\theta\sin^3\varphi+2\dot\theta\dot\varphi\cos\varphi\sin^2\varphi=0\quad\to\quad\ddot\theta\sin^3\varphi+2h\dot\varphi\cos\varphi=0\]
+
+\[\boxed{\ddot\theta(\varphi,\dot\varphi)=-2h\dot\varphi\frac{\cos\varphi}{\sin^3\varphi}}\]
+
+\newpage
+\[\frac{d}{dt}\left[\frac{\partial\mathcal{L}}{\partial\dot\varphi}\right]-\frac{\partial\mathcal{L}}{\partial\varphi}=0\]\\
+
+\[ml^2\ddot\varphi-ml^2\dot\theta^2\sin\varphi\cos\varphi+mgl\sin\varphi=0\]
+
+\[\ddot\varphi-\dot\theta^2\sin\varphi\cos\varphi+\frac{g}{l}\sin\varphi=0\quad\to\quad
+\ddot\varphi-h^2\frac{\cos\varphi}{\sin^3\varphi}+\frac{g}{l}\sin\varphi=0\]
+
+\[\omega_0^2=\frac{g}{l}\quad\to\quad\ddot\varphi-h^2\frac{\cos\varphi}{\sin^3\varphi}+\omega_0^2\sin\varphi=0\quad\to\quad
+\frac{d}{dt}\left[\frac{1}{2}\dot\varphi^2+\frac{h^2}{2\sin^2\varphi}-\omega_0^2\cos\varphi\right]=0\]
+
+\[\boxed{\varepsilon=\frac{1}{2}\dot\varphi^2+\frac{h^2}{2\sin^2\varphi}-\omega_0^2\cos\varphi\quad\to\quad\varepsilon\equiv\text{cte.}}\]\\
+
+\[\boxed{\ddot\varphi(\varphi)=h^2\frac{\cos\varphi}{\sin^3\varphi}-\omega_0^2\sin\varphi}\]
+
+\newpage
+Solución númerica por método de Euler
+
+\[f_{i+1}=f_i+h\dot f(f_i,t_i)\]\\
+
+\[h=\dot\theta\sin^2\varphi\quad\to\quad\dot\theta(\varphi)=\frac{h}{\sin^2\varphi}\]
+
+\[\varepsilon=\frac{1}{2}\dot\varphi^2+\frac{h^2}{2\sin^2\varphi}-\omega_0^2\cos\varphi\quad\to\quad
+\dot\varphi(\varphi)=\sqrt{2\varepsilon-\frac{h^2}{\sin^2\varphi}+2\omega_0^2\cos\varphi}\]\\
+
+\[\boxed{
+  \begin{array}{rcl}
+    t_{i+1}=t_i+h\\
+    \theta_{i+1}=\theta_i+h\dot\theta(\varphi_{i})\\
+    \varphi_{i+1}=\varphi_i+h\dot\varphi(\varphi_{i})
+  \end{array}
+}
+\]
+
+\newpage
+Solución númerica por método de Euler
+
+\[f_{i+1}=f_i+h\dot f(f_i,t_i)\]\\
+
+\[\ddot\theta(\varphi,\dot\varphi)=-2h\dot\varphi\frac{\cos\varphi}{\sin^3\varphi}\]
+
+\[\ddot\varphi(\varphi)=h^2\frac{\cos\varphi}{\sin^3\varphi}-\omega_0^2\sin\varphi\]
+
+\[\boxed{
+  \begin{array}{rcl}
+    t_{i+1}=t_i+h\\\\
+    \theta_{i+1}=\theta_i+h\dot\theta_{i}\\
+    \dot\theta_{i+1}=\dot\theta_i+h\ddot\theta(\varphi_i,\dot\varphi_i)\\\\
+    \varphi_{i+1}=\varphi_i+h\dot\varphi_{i}\\
+    \dot\varphi_{i+1}=\dot\varphi_i+h\ddot\varphi(\varphi_i)
+  \end{array}
+}
+\]
+
+\end{document}

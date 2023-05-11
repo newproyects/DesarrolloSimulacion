@@ -1,0 +1,202 @@
+\documentclass[10pt,a4papper]{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{cancel}
+\usepackage{multicol}
+\usepackage{blindtext}
+\usepackage[hidelinks]{hyperref}
+\usepackage[left=2.00cm, right=3.00cm, top=2.00cm, bottom=2.00cm]{geometry}
+\author{Angel Fdo. García Núñez}
+\date{Septiembre 17, 2020}
+\title{Estadisitica}
+
+\begin{document}
+
+\Huge
+Desarrollo y simulación de masas en mesa sin
+fricción\\
+
+Angel Fernando García Núñez
+
+\Large
+\newpage
+\[\vec r_1=r\cos\theta\hat\imath+r\sin\theta\hat\jmath+0\hat k\]
+
+\[\dot{\vec r}_1=(\dot r\cos\theta-r\dot\theta\sin\theta)\hat\imath+(\dot r\sin\theta+r\dot\theta\cos\theta)\hat\jmath+0\hat k\]
+
+\[\dot{\vec r}_1\cdot\dot{\vec r}_1=(\dot r\cos\theta-r\dot\theta\sin\theta)^2+(\dot r\sin\theta+r\dot\theta\cos\theta)^2\quad\to\quad
+\dot{\vec r}_1\cdot\dot{\vec r}_1=\dot r^2+r^2\dot\theta^2\]\\
+
+\[\vec r_2=0\hat\imath+0\hat\jmath+(r-L)\hat k\]
+
+\[\dot{\vec r}_2=0\hat\imath+0\hat\jmath+\dot r\hat k\]
+
+\[\dot{\vec r}_2\cdot\dot{\vec r}_2=\dot r^2\]\\
+
+\[T=\frac{1}{2}m(\dot{\vec r}_1\cdot\dot{\vec r}_1+\dot{\vec r}_2\cdot\dot{\vec r}_2)\quad\to\quad
+T=\frac{1}{2}m(2\dot r^2+r^2\dot\theta^2)\]
+
+\[V=mgy_2\quad\to\quad V=mg(r-L)\]\\
+
+\[\mathcal{L}=T-V\quad\to\quad\mathcal{L}=\frac{1}{2}m(2\dot r^2+r^2\dot\theta^2)-mg(r-L)\]
+
+\newpage
+\[\frac{\partial\mathcal{L}}{\partial r}=mr\dot\theta^2-mg\]
+
+\[\frac{\partial\mathcal{L}}{\partial\dot r}=2m\dot r\quad\to\quad
+\frac{d}{dt}\left[\frac{\partial\mathcal{L}}{\partial\dot r}\right]=2m\ddot r\]\\
+
+\[\frac{\partial\mathcal{L}}{\partial\theta}=0\]
+
+\[\frac{\partial\mathcal{L}}{\partial\dot\theta}=mr^2\dot\theta\quad\to\quad
+\frac{d}{dt}\left[\frac{\partial\mathcal{L}}{\partial\dot\theta}\right]=2mr\dot r\dot\theta+mr^2\ddot\theta\]\\
+
+\[\frac{d}{dt}\left[\frac{\partial\mathcal{L}}{\partial\dot r}\right]-\frac{\partial\mathcal{L}}{\partial r}=0\]
+
+\[2m\ddot r-(mr\dot\theta^2-mg)=0\]\\
+
+\[\frac{d}{dt}\left[\frac{\partial\mathcal{L}}{\partial\dot\theta}\right]-\frac{\partial\mathcal{L}}{\partial\theta}=0\]
+
+\[\frac{d}{dt}(mr^2\dot\theta)=0\quad\to\quad\frac{d}{dt}(r^2\dot\theta)=0\quad\to\quad M=r^2\dot\theta\]
+
+\[2mr\dot r\dot\theta+mr^2\ddot\theta=0\quad\to\quad 2r\dot r\dot\theta+r^2\ddot\theta=0\]\\
+
+\[\text{Ecuaciones de movimiento}\]
+
+\[\ddot r-\frac{1}{2}r\dot\theta^2+\frac{1}{2}g=0\]
+
+\[\ddot\theta+2\dot\theta\frac{\dot r}{r}=0\]
+
+\newpage
+\[\text{Casos particulares}\]\\
+
+\[\text{Masa 2 sin aceleración}\]
+
+\[\ddot r=0\quad\to\quad r\dot\theta^2=g\quad\to\quad\dot\theta=\pm\sqrt{\frac{g}{r}}\]\\
+
+\[\text{Masa 2 sin movimiento}\]
+
+\[\ddot r=0\quad\to\quad r\dot\theta^2=g\quad\to\quad\dot\theta=\pm\sqrt{\frac{g}{r}}\]
+
+\[\ddot\theta=0\quad\to\quad 2\dot\theta\frac{\dot r}{r}=0\quad\to\quad\dot r=0\]\\
+
+\[\text{Masa 1 sin rotación}\]
+
+\[\dot\theta=0\quad\to\quad\ddot r=-\frac{1}{2}g\quad\to\quad\dot r=-\frac{1}{2}gt\quad\to\quad r=-\frac{1}{4}gt^2\]
+
+%prueba
+\newpage
+\[\ddot\theta+2\dot\theta\frac{\dot r}{r}=0\quad\to\quad\frac{\ddot\theta}{\dot\theta}=-2\frac{\dot r}{r}\]
+
+\[\omega=\dot\theta\quad\to\quad
+\frac{\dot\omega}{\omega}=-2\frac{\dot r}{r}\quad\to\quad\]\\
+
+\[\frac{\dot f}{f}=\frac{d}{dt}\left(\frac{1}{f}\right)\quad ?\]\\
+
+\[\frac{d}{dt}\left(\frac{1}{f}\right)=\frac{d}{dt}f^{-1}=-f^{-2}\frac{d}{dt}f=-f^{-2}\dot f\]
+
+\[\therefore\quad\dot f=-f^2\frac{d}{dt}\left(\frac{1}{f}\right)\]
+
+\newpage
+\[\ddot\theta+2\dot\theta\frac{\dot r}{r}=0\quad\to\quad r^3\ddot\theta+2r^2\dot\theta\dot r=0\quad\to\quad r^3\ddot\theta+2M\dot r=0\]
+
+\[\ddot\theta=-2M\frac{\dot r}{r^3}\]
+
+\newpage
+\[\ddot r-\frac{1}{2}r\dot\theta^2+\frac{1}{2}g=0\]
+
+\[r=e^{\omega t}\quad\to\quad
+\dot r=\omega e^{\omega t}\quad\to\quad
+\ddot r=\omega^2 e^{\omega t}\]
+
+\[\omega^2 e^{\omega t}-\frac{1}{2}e^{\omega t}\dot\theta^2+\frac{1}{2}g=0\]
+
+\[2\omega^2 e^{\omega t}-e^{\omega t}\dot\theta^2+g=0\quad\to\quad
+e^{\omega t}(\omega^2-\dot\theta^2)+g=0\]
+
+%prueba
+
+\newpage
+\[\text{Solución númerica}\]
+
+\[\ddot r-\frac{1}{2}r\dot\theta^2+\frac{1}{2}g=0\]
+
+\[\ddot\theta+2\dot\theta\frac{\dot r}{r}=0\]\\
+
+\[\omega=\frac{d\theta}{dt}\quad\to\quad\dot\omega=\frac{d^2\theta}{dt^2}\]
+
+\[q=\frac{dr}{dt}\quad\to\quad\dot q=\frac{d^2r}{dt^2}\]\\
+
+\[\dot q-\frac{1}{2}r\omega^2+\frac{1}{2}g=0\]
+
+\[\dot\omega+2\omega\frac{q}{r}=0\]\\
+
+\[\dot q=\frac{1}{2}r\omega^2-\frac{1}{2}g\]
+
+\[\dot\omega=-2\omega\frac{q}{r}\]\\
+
+\newpage
+\[\text{Metodo de Runge Kutta de orden 4}\]
+
+\large
+\begin{center}
+  \begin{tabular}{|c|c|}
+    \hline
+    $\frac{d\theta}{dt}=\omega$ & $\frac{d\omega}{dt}=f(\theta,r,\omega,q,t)$\\
+    \hline
+    $k_1=h\omega$ & $c_1=h(\theta,r,\omega,q,t)$\\
+    $k_2=h(\omega+\frac{1}{2}c_1)$ & $c_2=hf(\theta+\frac{1}{2}k_1,r+\frac{1}{2}n_1,\omega+\frac{1}{2}c_1,q+\frac{1}{2}m_1,t+\frac{1}{2}h)$\\
+    $k_3=h(\omega+\frac{1}{2}c_2)$ & $c_3=hf(\theta+\frac{1}{2}k_2,r+\frac{1}{2}n_2,\omega+\frac{1}{2}c_2,q+\frac{1}{2}m_2,t+\frac{1}{2}h)$\\
+    $k_4=h(\omega+c_3)$ & $c_4=hf(\theta+k_3,r+n_3,\omega+c_3,q+m_3,t+h)$\\
+    \hline
+    $\theta(t+h)=\theta(t)+\frac{1}{6}(k_1+2k_2+2k_3+k_4)$ & $\omega(t+h)=\omega(t)+\frac{1}{6}(c_1+2c_2+2c_3+c_4)$\\
+    \hline
+  \end{tabular}
+\end{center}
+\begin{center}
+  \begin{tabular}{|c|c|}
+    \hline
+    $\frac{dr}{dt}=q$ & $\frac{dq}{dt}=u(\theta,r,\omega,q,t)$\\
+    \hline
+    $n_1=hq$ & $m_1=hu(\theta,r,\omega,q,t)$\\
+    $n_2=h(q+\frac{1}{2}m_1)$ & $m_2=hu(\theta+\frac{1}{2}k_1,r+\frac{1}{2}n_1,\omega+\frac{1}{2}c_1,q+\frac{1}{2}m_1,t+\frac{1}{2}h)$\\
+    $n_3=h(q+\frac{1}{2}m_2)$ & $m_3=hu(\theta+\frac{1}{2}k_2,r+\frac{1}{2}n_2,\omega+\frac{1}{2}c_2,q+\frac{1}{2}m_2,t+\frac{1}{2}h)$\\
+    $n_4=h(q+m_3)$ & $m_4=hu(\theta+k_3,r+n_3,\omega+c_3,q+m_3,t+h)$\\
+    \hline
+    $r(t+h)=r(t)+\frac{1}{6}(n_1+2n_2+2n_3+n_4)$ & $q(t+h)=q(t)+\frac{1}{6}(m_1+2m_2+2m_3+m_4)$\\
+    \hline
+  \end{tabular}
+\end{center}
+\Large
+
+\[f(\theta,r,\omega,q,t)=-2\omega\frac{q}{r}\quad,\quad u(\theta,r,\omega,q,t)=\frac{1}{2}r\omega^2-\frac{1}{2}g\]\\
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+\newpage
+
+
+\end{document}
