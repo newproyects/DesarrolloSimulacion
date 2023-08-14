@@ -18,4 +18,13 @@
 
   ## Física Estadística
 
-   ### [Movimiento Browniano](Browniano/doc/Browniano.pdf) - [simulación](Browniano/script/main.py)
+  ### [Movimiento Browniano](Browniano/doc/Browniano.pdf) - [simulación](Browniano/script/main.py)
+
+## Mecánica Cuántica
+
+  <details>
+  <summary><h2>Potenciales en una partícula</h2></summary>
+
+   - ### [Doble Delta de Dirac](PotencialesCuanticos/DobleDeltaDirac/doc/DobleDeltaDirac.pdf) - [simulación](PotencialesCuanticos/DobleDeltaDirac/script/main.py)
+
+  </details>
