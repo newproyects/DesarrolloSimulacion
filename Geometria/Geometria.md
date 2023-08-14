@@ -1,4 +1,4 @@
-# Geomtría Diferencial
+# Geometría Diferencial
 
 <details>
   <summary><h2>Geodésicas</h2></summary>
