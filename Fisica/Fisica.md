@@ -38,6 +38,6 @@ $$\hat H|\Psi\rangle=i\hbar\frac{\partial}{\partial t}|\Psi\rangle$$
   <summary><h2>Potenciales en una partícula</h2></summary>
 
    - ### [Doble Delta de Dirac](PotencialesCuanticos/DobleDeltaDirac/doc/DobleDeltaDirac.pdf) - [simulación](PotencialesCuanticos/DobleDeltaDirac/script/main.py)
-   - ### [Pozo cuadrado infinito](Fisica/PotencialesCuanticos/Pozo/PozoCuadradoInfinito/doc/PozoCuadradoInfinito.pdf)
+   - ### [Pozo cuadrado infinito](PotencialesCuanticos/Pozo/PozoCuadradoInfinito/doc/PozoCuadradoInfinito.pdf)
 
   </details>
