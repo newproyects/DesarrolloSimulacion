@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2023.5.29)  23 AUG 2023 07:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/Debian) (preloaded format=pdflatex 2023.5.29)  25 AUG 2023 09:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**\nonstopmode\input DobleDeltaDirac.tex
-(./DobleDeltaDirac.tex
+**\nonstopmode\input PozoCuadradoInfinito.tex
+(./PozoCuadradoInfinito.tex
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
 (/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
@@ -750,45 +750,150 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \Gm@layoutvoffset=\dimen290
 \Gm@dimlist=\toks37
 )
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryarrows.code.tex
+File: tikzlibraryarrows.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.
+tex
+File: pgflibraryarrows.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\arrowsize=\dimen291
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryscopes.code.tex
+File: tikzlibraryscopes.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryangles.code.tex
+File: tikzlibraryangles.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryquotes.code.tex
+File: tikzlibraryquotes.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarysnakes.code.tex
+File: tikzlibrarysnakes.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+
+
+Package pgf Warning: Snakes have been superseded by decorations. Please use the
+ decoration libraries instead of the snakes library on input line 14.
+
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarydecorations.shapes.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrary
+decorations.shapes.code.tex)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshapes.code.tex
+File: tikzlibraryshapes.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshapes.geometric.code.tex
+File: tikzlibraryshapes.geometric.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshape
+s.geometric.code.tex
+File: pgflibraryshapes.geometric.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshapes.misc.code.tex
+File: tikzlibraryshapes.misc.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshape
+s.misc.code.tex
+File: pgflibraryshapes.misc.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshapes.symbols.code.tex
+File: tikzlibraryshapes.symbols.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshape
+s.symbols.code.tex
+File: pgflibraryshapes.symbols.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshapes.arrows.code.tex
+File: tikzlibraryshapes.arrows.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshape
+s.arrows.code.tex
+File: pgflibraryshapes.arrows.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshapes.callouts.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshape
+s.callouts.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshapes.multipart.code.tex
+File: tikzlibraryshapes.multipart.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshape
+s.multipart.code.tex
+File: pgflibraryshapes.multipart.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgfnodepartlowerbox=\box107
+\pgfnodeparttwobox=\box108
+\pgfnodepartthreebox=\box109
+\pgfnodepartfourbox=\box110
+\pgfnodeparttwentybox=\box111
+\pgfnodepartnineteenbox=\box112
+\pgfnodeparteighteenbox=\box113
+\pgfnodepartseventeenbox=\box114
+\pgfnodepartsixteenbox=\box115
+\pgfnodepartfifteenbox=\box116
+\pgfnodepartfourteenbox=\box117
+\pgfnodepartthirteenbox=\box118
+\pgfnodeparttwelvebox=\box119
+\pgfnodepartelevenbox=\box120
+\pgfnodeparttenbox=\box121
+\pgfnodepartninebox=\box122
+\pgfnodeparteightbox=\box123
+\pgfnodepartsevenbox=\box124
+\pgfnodepartsixbox=\box125
+\pgfnodepartfivebox=\box126
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarycalc.code.tex
+File: tikzlibrarycalc.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2020-01-29 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count332
-\l__pdf_internal_box=\box107
+\l__pdf_internal_box=\box127
 )
 
 LaTeX Warning: Unused global option(s):
     [a4papper].
 
-(./DobleDeltaDirac.aux)
-\openout1 = `DobleDeltaDirac.aux'.
+No file PozoCuadradoInfinito.aux.
+\openout1 = `PozoCuadradoInfinito.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 22.
+LaTeX Font Info:    ... okay on input line 22.
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count333
-\scratchdimen=\dimen291
-\scratchbox=\box108
+\scratchdimen=\dimen292
+\scratchbox=\box128
 \nofMPsegments=\count334
 \nofMParguments=\count335
 \everyMPshowfont=\toks38
 \MPscratchCnt=\count336
-\MPscratchDim=\dimen292
+\MPscratchDim=\dimen293
 \MPnumerator=\count337
 \makeMPintoPDFobject=\count338
 \everyMPtoPDFconversion=\toks39
@@ -805,9 +910,9 @@ e
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.17} into 
 your preamble.
- on input line 16.
+ on input line 22.
 
-Package hyperref Info: Link coloring OFF on input line 16.
+Package hyperref Info: Link coloring OFF on input line 22.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 
@@ -819,13 +924,11 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count339
 )
-LaTeX Info: Redefining \ref on input line 16.
-LaTeX Info: Redefining \pageref on input line 16.
-LaTeX Info: Redefining \nameref on input line 16.
-
-(./DobleDeltaDirac.out) (./DobleDeltaDirac.out)
+LaTeX Info: Redefining \ref on input line 22.
+LaTeX Info: Redefining \pageref on input line 22.
+LaTeX Info: Redefining \nameref on input line 22.
 \@outlinefile=\write4
-\openout4 = `DobleDeltaDirac.out'.
+\openout4 = `PozoCuadradoInfinito.out'.
 
 
 *geometry* driver: auto-detecting
@@ -863,313 +966,94 @@ LaTeX Info: Redefining \nameref on input line 16.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 19--20
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
  []
 
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 25.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 32.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 25.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 32.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.39 
-     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 44--45
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 46--47
-
- []
+! Missing \right. inserted.
+<inserted text> 
+                \right .
+l.38 \end{array}\]
+                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 67--68
-
+Overfull \hbox (23.67073pt too wide) detected at line 77
+\OMS/cmsy/m/n/14.4 ^^@[][] \OT1/cmr/m/n/14.4 + \OML/cmm/m/it/14.4 V\OT1/cmr/m/n
+/14.4 (\OML/cmm/m/it/14.4 x\OT1/cmr/m/n/14.4 )\OML/cmm/m/it/14.4  []\OT1/cmr/m/
+n/14.4 (\OML/cmm/m/it/14.4 x\OT1/cmr/m/n/14.4 ) = \OML/cmm/m/it/14.4 E []\OT1/c
+mr/m/n/14.4 (\OML/cmm/m/it/14.4 x\OT1/cmr/m/n/14.4 )  \OMS/cmsy/m/n/14.4 !  ^^@
+[][] \OT1/cmr/m/n/14.4 + \OML/cmm/m/it/14.4 V\OT1/cmr/m/n/14.4 (\OML/cmm/m/it/1
+4.4 x\OT1/cmr/m/n/14.4 )(0)(\OML/cmm/m/it/14.4 x\OT1/cmr/m/n/14.4 ) = \OML/cmm/
+m/it/14.4 E\OT1/cmr/m/n/14.4 (0)(\OML/cmm/m/it/14.4 x\OT1/cmr/m/n/14.4 )
  []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 71--72
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 79--80
-
- []
-
-! Missing \right. inserted.
-<inserted text> 
-                \right .
-l.87 \end{array}}
-                 \]
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 100--101
+Underfull \hbox (badness 10000) in paragraph at lines 88--89
 
  []
 
-! Missing \right. inserted.
-<inserted text> 
-                \right .
-l.110 \end{array}}
-                  \]
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
+
+Underfull \hbox (badness 10000) in paragraph at lines 92--93
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--98
+
+ []
 
 [4]
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.128 
-      
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 131--132
+Underfull \hbox (badness 10000) in paragraph at lines 113--114
 
  []
 
 
-Overfull \hbox (77.28789pt too wide) detected at line 136
-\OMS/cmsy/m/n/14.4 ^^@[] [][] []\OML/cmm/m/it/14.4 dx \OMS/cmsy/m/n/14.4 ^^@ \O
-ML/cmm/m/it/14.4  [][] ^^N\OT1/cmr/m/n/14.4 (\OML/cmm/m/it/14.4 x \OT1/cmr/m/n
-/14.4 + \OML/cmm/m/it/14.4 a\OT1/cmr/m/n/14.4 )\OML/cmm/m/it/14.4  \OT1/cmr/m/n
-/14.4 (\OML/cmm/m/it/14.4 x\OT1/cmr/m/n/14.4 )\OML/cmm/m/it/14.4 dx \OMS/cmsy/m
-/n/14.4 ^^@ \OML/cmm/m/it/14.4 [] \OT1/cmr/m/n/14.4 = \OML/cmm/m/it/14.4 E [][
-]  \OT1/cmr/m/n/14.4 (\OML/cmm/m/it/14.4 x\OT1/cmr/m/n/14.4 )\OML/cmm/m/it/14.4
- dx
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 136--137
+Underfull \hbox (badness 10000) in paragraph at lines 117--118
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 140--141
+Underfull \hbox (badness 10000) in paragraph at lines 120--121
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 144--145
+Underfull \hbox (badness 10000) in paragraph at lines 126--127
 
+ []
+
+
+Overfull \hbox (3.42274pt too wide) detected at line 137
+\OML/cmm/m/it/14.4 B[] [] \OT1/cmr/m/n/14.4 = \OML/cmm/m/it/14.4 B[] [] \OT1/cm
+r/m/n/14.4 = \OML/cmm/m/it/14.4 B[] [] \OT1/cmr/m/n/14.4 = 1
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 152--153
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 156--157
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 158--159
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 160--161
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 162--163
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 164--165
-
- []
-
-[6]
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.184 
-      
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 187--188
-
- []
-
-
-Overfull \hbox (46.17668pt too wide) detected at line 192
-\OMS/cmsy/m/n/14.4 ^^@[] [][] []\OML/cmm/m/it/14.4 dx \OMS/cmsy/m/n/14.4 ^^@ \O
-ML/cmm/m/it/14.4 [] \OMS/cmsy/m/n/14.4 ^^@ \OML/cmm/m/it/14.4  [][] ^^N\OT1/c
-mr/m/n/14.4 (\OML/cmm/m/it/14.4 x \OMS/cmsy/m/n/14.4 ^^@ \OML/cmm/m/it/14.4 a\O
-T1/cmr/m/n/14.4 )\OML/cmm/m/it/14.4  \OT1/cmr/m/n/14.4 (\OML/cmm/m/it/14.4 x\OT
-1/cmr/m/n/14.4 )\OML/cmm/m/it/14.4 dx \OT1/cmr/m/n/14.4 = \OML/cmm/m/it/14.4 E 
-[][]  \OT1/cmr/m/n/14.4 (\OML/cmm/m/it/14.4 x\OT1/cmr/m/n/14.4 )\OML/cmm/m/it/1
-4.4 dx
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 192--193
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 196--197
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 200--201
-
- []
-
-[7]
-Underfull \hbox (badness 10000) in paragraph at lines 208--209
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 212--213
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 214--215
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 216--217
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 218--219
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 220--221
-
- []
-
-[8]
-Underfull \hbox (badness 10000) in paragraph at lines 233--234
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 238--239
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 243--244
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 246--247
-
- []
-
-[9]
-Underfull \hbox (badness 10000) in paragraph at lines 253--254
-
- []
-
-
-Overfull \hbox (34.93578pt too wide) detected at line 256
-[] [] \OML/cmm/m/it/14.4 Ce[] \OT1/cmr/m/n/14.4 + []\OML/cmm/m/it/14.4 C \OT1/c
-mr/m/n/14.4 = 0  \OMS/cmsy/m/n/14.4 !  ^^@ [] \OML/cmm/m/it/14.4 e[] \OT1/cmr/m
-/n/14.4 + [] = 0
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 256--257
-
- []
-
-
-Overfull \hbox (68.01869pt too wide) detected at line 259
-[] [] \OML/cmm/m/it/14.4 e[] \OMS/cmsy/m/n/14.4 ^^@ [][] \OT1/cmr/m/n/14.4 = 0 
- \OMS/cmsy/m/n/14.4 !  [] \OML/cmm/m/it/14.4 e[] \OMS/cmsy/m/n/14.4 ^^@ [][] \O
-T1/cmr/m/n/14.4 = 0
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 259--260
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 262--263
-
- []
-
-
-Overfull \hbox (35.81158pt too wide) detected at line 266
-[] \OML/cmm/m/it/14.4 e[] \OT1/cmr/m/n/14.4 = \OMS/cmsy/m/n/14.4 ^^F[]  !  [] \
-OML/cmm/m/it/14.4 e[] \OT1/cmr/m/n/14.4 = \OMS/cmsy/m/n/14.4 ^^F[]  !  \OML/cmm
-/m/it/14.4 k \OT1/cmr/m/n/14.4 = [] \OMS/cmsy/m/n/14.4 ^^G []\OML/cmm/m/it/14.4
- e[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 266--267
-
- []
-
-[10]
 ! Missing \right. inserted.
 <inserted text> 
                 \right .
-l.278 \end{array}\]
-                   \\
+l.149 E_n=\frac{n^2\pi^2\hbar^2}{2ma^2}\]
+                                         \\\\
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
@@ -1177,139 +1061,53 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 278--279
+Underfull \hbox (badness 10000) in paragraph at lines 149--150
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 282--283
+Underfull \hbox (badness 10000) in paragraph at lines 149--150
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 284--285
+Underfull \hbox (badness 10000) in paragraph at lines 180--181
 
  []
 
+[6] (./PozoCuadradoInfinito.aux)
 
-Overfull \hbox (47.98048pt too wide) detected at line 290
-\OML/cmm/m/it/14.4 A[] [][] e[]dx \OT1/cmr/m/n/14.4 + \OML/cmm/m/it/14.4 C[] []
-[] e[]dx \OT1/cmr/m/n/14.4 + \OML/cmm/m/it/14.4 D[] [][] e[]dx \OT1/cmr/m/n/14.
-4 + 2\OML/cmm/m/it/14.4 CD [][] dx \OT1/cmr/m/n/14.4 + \OML/cmm/m/it/14.4 B[] [
-][] e[]dx \OT1/cmr/m/n/14.4 = 1
- []
+Package rerunfilecheck Warning: File `PozoCuadradoInfinito.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 290--291
-
- []
-
-
-Overfull \hbox (7.37978pt too wide) detected at line 308
-\OML/cmm/m/it/14.4 A[]e[] \OMS/cmsy/m/n/14.4 ^^@ \OML/cmm/m/it/14.4 C[] [] \OT1
-/cmr/m/n/14.4 + \OML/cmm/m/it/14.4 D[] [] \OT1/cmr/m/n/14.4 + 8\OML/cmm/m/it/14
-.4 k[]aCD \OT1/cmr/m/n/14.4 + \OML/cmm/m/it/14.4 B[]e[] \OT1/cmr/m/n/14.4 = 2\O
-ML/cmm/m/it/14.4 k[]
- []
-
-[11] [12] [13]
-! Missing \right. inserted.
-<inserted text> 
-                \right .
-l.383 E_\pm=-\frac{k_\pm^2\hbar^2}{2m}\]
-                                        
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 386--387
-
- []
-
-[14]
-Underfull \hbox (badness 10000) in paragraph at lines 396--397
-
- []
-
-[15]
-<nrp.png, id=83, 462.528pt x 346.896pt>
-File: nrp.png Graphic file (type png)
-<use nrp.png>
-Package pdftex.def Info: nrp.png  used on input line 408.
-(pdftex.def)             Requested size: 265.55629pt x 199.16928pt.
-<nrm.png, id=85, 462.528pt x 346.896pt>
-File: nrm.png Graphic file (type png)
-<use nrm.png>
-Package pdftex.def Info: nrm.png  used on input line 409.
-(pdftex.def)             Requested size: 265.55629pt x 199.16928pt.
-
-Overfull \hbox (77.21465pt too wide) in paragraph at lines 408--410
-[][] [] 
- []
-
-<sol.png, id=86, 462.528pt x 346.896pt>
-File: sol.png Graphic file (type png)
-<use sol.png>
-Package pdftex.def Info: sol.png  used on input line 411.
-(pdftex.def)             Requested size: 265.55629pt x 199.16928pt.
-<solz.png, id=87, 462.528pt x 346.896pt>
-File: solz.png Graphic file (type png)
-<use solz.png>
-Package pdftex.def Info: solz.png  used on input line 412.
-(pdftex.def)             Requested size: 265.55629pt x 199.16928pt.
-
-Overfull \hbox (77.21465pt too wide) in paragraph at lines 411--413
-[][] [] 
- []
-
-<psip.png, id=88, 462.528pt x 346.896pt>
-File: psip.png Graphic file (type png)
-<use psip.png>
-Package pdftex.def Info: psip.png  used on input line 414.
-(pdftex.def)             Requested size: 265.55629pt x 199.16928pt.
-<psim.png, id=89, 462.528pt x 346.896pt>
-File: psim.png Graphic file (type png)
-<use psim.png>
-Package pdftex.def Info: psim.png  used on input line 415.
-(pdftex.def)             Requested size: 265.55629pt x 199.16928pt.
-
-Overfull \hbox (77.21465pt too wide) in paragraph at lines 414--416
-[][] [] 
- []
-
-[16 <./nrp.png> <./nrm.png> <./sol.png> <./solz.png> <./psip.png> <./psim.png>]
-(./DobleDeltaDirac.aux)
-Package rerunfilecheck Info: File `DobleDeltaDirac.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+Package rerunfilecheck Info: Checksums for `PozoCuadradoInfinito.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 27339 strings out of 479304
- 661782 string characters out of 5869779
- 1047465 words of memory out of 5000000
- 44050 multiletter control sequences out of 15000+600000
- 406328 words of font info for 39 fonts, out of 8000000 for 9000
+ 30533 strings out of 479304
+ 755925 string characters out of 5869779
+ 1276237 words of memory out of 5000000
+ 47195 multiletter control sequences out of 15000+600000
+ 407898 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 87i,11n,89p,762b,639s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/latxfo
-nt/line10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbol
-s/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols
-/msbm10.pfb>
-Output written on DobleDeltaDirac.pdf (16 pages, 261670 bytes).
+ 87i,17n,89p,767b,2314s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/latxfont/line10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/symbols/msbm10.pfb>
+Output written on PozoCuadradoInfinito.pdf (6 pages, 115944 bytes).
 PDF statistics:
- 148 PDF objects out of 1000 (max. 8388607)
- 103 compressed objects within 2 object streams
- 17 named destinations out of 1000 (max. 500000)
- 43 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 82 PDF objects out of 1000 (max. 8388607)
+ 62 compressed objects within 1 object stream
+ 7 named destinations out of 1000 (max. 500000)
+ 13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
